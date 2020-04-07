@@ -3,7 +3,7 @@ import Router from "next/router";
 
 const NotFound = () => (
   <>
-    <button onClick={() => Router.push("/")}>Navigate Home Dynamic Link</button>
+    <button onClick={() => Router.push("/")}>Navigate Home</button>
     <div>Page not found.</div>
   </>
 );
