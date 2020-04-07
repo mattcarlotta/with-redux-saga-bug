@@ -25,9 +25,12 @@ class Other extends React.Component {
         <br />
         <button onClick={() => Router.push("/")}>Navigate to Home</button>
         <Page title="Other Page" />
+        <pre>
+          <code>{JSON.stringify(this.props, null, 4)}</code>
+        </pre>
       </>
     );
   }
 }
 
-export default connect()(Other);
+export default connect((store) => store)(Other);
