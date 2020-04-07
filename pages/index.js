@@ -33,9 +33,12 @@ class Index extends React.Component {
         </button>
         <br />
         <Page title="Index Page" />
+        <pre>
+          <code>{JSON.stringify(this.props, null, 4)}</code>
+        </pre>
       </>
     );
   }
 }
 
-export default connect(null, { startClock })(Index);
+export default connect((store) => store, { startClock })(Index);
